@@ -6,10 +6,6 @@ layout: default
   {{ page.title }}
 </h1>
 
-{% if page.image.feature %}
-  <img src="/assets/img/{{ page.image.feature }}">
-{% endif %}
-
 {{ content }}
 <span class="post-date">
   Written on
@@ -30,11 +26,6 @@ layout: default
     (<a href="https://twitter.com/gitgalaxy">@gitgalaxy</a>)
   {% endif %}
 </span>
-
-<a href="http://click.tunnelbear.com/aff_c?offer_id=36&aff_id=4214&file_id=56" target="_blank"><img src="https://media.go2speed.org/brand/files/tunnelbear/36/TunnelBearBanner1.png" width="728" height="90" border="0" /></a><img src="https://click.tunnelbear.com/aff_i?offer_id=36&file_id=56&aff_id=4214" width="1" height="1" />
-{% include social-sharing.html %}
-
-{% include related-posts.html %}
 
 {% if site.data.settings.disqus.comments %}
   {% include disqus.html %}
